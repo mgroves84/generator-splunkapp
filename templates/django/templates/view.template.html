@@ -1,0 +1,24 @@
+{% extends "splunkdj:<%= templatename %>.html" %}
+
+{% load splunkmvc %}
+
+{% block title %}<%= name %>{% endblock title %}
+
+{% block css %}
+    <!-- Link CSS here -->
+{% endblock css %}
+
+{% block content %}
+    <!-- User HTML code goes here -->
+{% endblock content %}
+
+{% block js %}
+    <script>
+        var deps = [
+            'splunkjs/ready!'
+        ];
+        require(deps, function(mvc) {
+            /* User JavaScript Code goes here */
+        });
+    </script>
+{% endblock js %}

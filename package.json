@@ -1,0 +1,41 @@
+{
+  "name": "generator-splunkapp",
+  "description": "A Splunk app generator for Yeoman",
+  "version": "0.1.0",
+  "homepage": "https://github.com/splunk/generator-splunkapp",
+  "bugs": "https://github.com/generator-splunkapp/issues",
+  "author": {
+    "name": "Splunk",
+    "email": "devinfo@splunk.com",
+    "url": "https://github.com/splunk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/splunk/generator-splunkapp.git"
+  },
+  "licenses": [
+    {
+      "type": "Apache",
+      "url": "https://github.com/splunk/generator-splunkapp/blob/master/LICENSE"
+    }
+  ],
+  "main": "app/index.js",
+  "dependencies": {
+    "yeoman-generator": "~0.13.4",
+    "underscore": "~1.5.2",
+    "grunt-splunk": "git+ssh://git@github.com:splunk/grunt-splunk.git"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "splunk",
+    "generator-splunkapp"
+  ]
+}

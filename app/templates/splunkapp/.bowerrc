@@ -1,0 +1,3 @@
+{
+  "directory" : "django/<%= appname %>/static/<%= appname %>/bower_components"
+}

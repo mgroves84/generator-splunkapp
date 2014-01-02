@@ -1,0 +1,13 @@
+# Linux Bash script
+[script://./bin/<%= name %>.sh]
+disabled = 0
+sourcetype = <%= sourcetype %>
+source = <%= source %>
+host = <%= host %>
+
+# Windows Batch script
+[script://.\bin\<%= name %>.cmd]
+disabled = 0
+sourcetype = <%= sourcetype %>
+source = <%= source %>
+host = <%= host %>

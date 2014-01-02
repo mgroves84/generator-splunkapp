@@ -1,0 +1,22 @@
+{% load splunkmvc %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= name %></title>
+</head>
+<body>
+    <!-- User HTML code goes here -->
+
+    {% component_loader %}
+
+    <script>
+        var deps = [
+            'splunkjs/ready!'
+        ];
+        require(deps, function(mvc) {
+            /* User JavaScript Code goes here */
+        });
+    </script>
+</body>
+</html>
