@@ -2,7 +2,8 @@
 
 var configuration = require('grunt-splunk/lib/configuration'),
     splunkEnvironment = require('grunt-splunk/lib/environment'),
-    splunkWatchConfig = require('grunt-splunk/lib/watchConfig');
+    splunkWatchConfig = require('grunt-splunk/lib/watchConfig'),
+    path = require('path');
 
 module.exports = function(grunt) {
   // Verify environment
