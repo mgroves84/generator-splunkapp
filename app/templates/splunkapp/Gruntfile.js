@@ -21,6 +21,16 @@ module.exports = function(grunt) {
   // Set splunk application
   splunkConfig.splunkApp = '<%= appname %>';
 
+  // Specify config for splunk-pack task
+  splunkConfig.pack = {
+    sourceDir: __dirname,
+    output: path.join(__dirname, (splunkConfig.splunkApp + '.tar.gz')),
+    source: [
+      '**/*',
+      '!*.tar.gz'
+    ]
+  };
+
   // Watch config. Launch jshint for all changed JS files
   var watchConfig = {
     js: {
@@ -58,4 +68,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
   grunt.registerTask('default', ['watch']);
+  grunt.registerTask('build', ['splunk-pack']);
 };
