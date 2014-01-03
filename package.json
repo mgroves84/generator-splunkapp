@@ -3,7 +3,7 @@
   "description": "A Splunk app generator for Yeoman",
   "version": "0.1.0",
   "homepage": "https://github.com/splunk/generator-splunkapp",
-  "bugs": "https://github.com/generator-splunkapp/issues",
+  "bugs": "https://github.com/splunk/generator-splunkapp/issues",
   "author": {
     "name": "Splunk",
     "email": "devinfo@splunk.com",

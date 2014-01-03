@@ -11,7 +11,13 @@ var Generator = module.exports = function(args, options) {
 
   // Determine name of Splunk app being created
   this.argument('appname', { type: String, required: false });
-  this.appname = this.appname || path.basename(process.cwd());
+  if (fs.existsSync(this.appname) &&
+    fs.statSync(this.appname).isDirectory()) {
+    this.destinationRoot(this.appname);
+    this.appname =  path.basename(this.appname);
+  } else {
+    this.appname = this.appname || path.basename(process.cwd());
+  }
 
   this.on('end', function () {
     this.installDependencies({ skipInstall: options['skip-install'] });
@@ -62,7 +68,7 @@ Generator.prototype._templateDir = function(source, destination, context) {
 
 // === Tasks ===
 
-Generator.prototype.app = function app() {  
+Generator.prototype.app = function app() {
   //Go to the splunk app root
   this._templateDir(
     path.join(this.sourceRoot(), 'splunkapp'), 
