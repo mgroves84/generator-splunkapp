@@ -40,10 +40,10 @@ Generator.prototype.askFor = function() {
 
 Generator.prototype.createScriptedInput = function() {
   this.sourceRoot(path.join(this.sourceRoot(), '..', '..', 'templates'));
-  var templateContent = this.read(path.join('default', 'input.conf.scriptedinput'));
+  var templateContent = this.read(path.join('default', 'inputs.conf.scriptedinput'));
   var content = _.template(templateContent, this);
 
-  var defaultInput = path.join(this.destinationRoot(), 'default', 'input.conf');
+  var defaultInput = path.join(this.destinationRoot(), 'default', 'inputs.conf');
   fs.appendFileSync(
     defaultInput, 
     endOfLine + content);
@@ -51,5 +51,5 @@ Generator.prototype.createScriptedInput = function() {
   this.copy(path.join('bin', 'script.cmd'), path.join('bin', this.name + '.cmd'));
   this.copy(path.join('bin', 'script.sh'), path.join('bin', this.name + '.sh'));
 
-  this.log.ok('Scripted input configuration "' + this.name + '" has been added to "default/input.conf".');
+  this.log.ok('Scripted input configuration "' + this.name + '" has been added to "default/inputs.conf".');
 };
