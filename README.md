@@ -27,9 +27,11 @@ yo splunkapp
 
 Available generators:
 
-* `splunkapp:jsmodel <name>` - generate new JavaScript Backbone model
-* `splunkapp:jsview <name>` - generate new JavaScript Backbone view
-* `splunkapp:jscollection <name>` - generate new JavaScript Backbone collection
-* `splunkapp:view <name>` - generate new Django View
-* `splunkapp:macro <name>` - generate new macro
-* `splunkapp:scriptedinput <name>` - generate new scripted input
+* `yo splunkapp:jsmodel <name>` - generate new JavaScript Backbone model
+* `yo splunkapp:jsview <name>` - generate new JavaScript Backbone view
+* `yo splunkapp:jscollection <name>` - generate new JavaScript Backbone collection
+* `yo splunkapp:jsclass <name>` - generate new JavaScript class
+* `yo splunkapp:styles <name>` - generate new CSS file
+* `yo splunkapp:view <name>` - generate new Django View
+* `yo splunkapp:macro <name>` - generate new macro
+* `yo splunkapp:scriptedinput <name>` - generate new scripted input

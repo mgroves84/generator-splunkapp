@@ -1,8 +1,8 @@
 /*jshint globalstrict: true*/ 'use strict';
 
 /* 
- * Backbone collection class generator.
- * Usage: yo splunkapp:jscollection <Backbone collection name>
+ * CSS file generator.
+ * Usage: yo splunkapp:styles <css file name>
  */
 
 var yeoman = require('yeoman-generator'),
@@ -26,8 +26,8 @@ Generator.prototype.createCollection = function() {
 
   this.appname = currentApp.name();
 
-  var destination = path.join('django', this.appname, 'static', this.appname, 'collections', this.name + '.js');
-  var source = path.join('django', 'static', 'collection.js');
+  var destination = path.join('django', this.appname, 'static', this.appname, this.name + '.css');
+  var source = path.join('django', 'static', 'styles.css');
 
   this.template(source, destination);
 };

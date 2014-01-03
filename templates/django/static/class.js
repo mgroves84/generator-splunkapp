@@ -1,21 +1,19 @@
 var deps = [
     'splunkjs/ready!',
-    'underscore', 
-    'backbone'
+    'underscore'
 ];
 
 define(
-  '<%= appname %>/models/<%= name %>', 
+  '<%= appname %>/<%= name %>', 
   deps, 
   function() { 'use strict';
 
   var _ = require('underscore');
-  var Backbone = require('backbone');
   var mvc = require('splunkjs/ready!');
 
-  var <%= _.capitalize(name) %> = Backbone.Model.extend({
-
-  });
+  var <%= _.capitalize(name) %> = function() {
+    
+  };
 
   return <%= _.capitalize(name) %>;
 });

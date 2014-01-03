@@ -13,8 +13,8 @@ define(
   var Backbone = require('backbone');
   var mvc = require('splunkjs/ready!');
 
-  var <%= _.classify(name) %>View = Backbone.View.extend({
+  var <%= _.capitalize(name) %> = Backbone.View.extend({
   });
 
-  return <%= _.classify(name) %>View;
+  return <%= _.capitalize(name) %>;
 });

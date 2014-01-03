@@ -14,9 +14,9 @@ define(
   var Backbone = require('backbone');
   var mvc = require('splunkjs/ready!');
 
-  var <%= _.classify(name) %>Collection = Backbone.Collection.extend({
+  var <%= _.capitalize(name) %> = Backbone.Collection.extend({
     model: require('<%= appname %>/models/<%= name %>')
   });
 
-  return <%= _.classify(name) %>Collection;
+  return <%= _.capitalize(name) %>;
 });

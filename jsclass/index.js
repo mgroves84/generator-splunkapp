@@ -1,8 +1,8 @@
 /*jshint globalstrict: true*/ 'use strict';
 
 /* 
- * Backbone collection class generator.
- * Usage: yo splunkapp:jscollection <Backbone collection name>
+ * JavaScript class generator.
+ * Usage: yo splunkapp:jsclass <JavaScript class name>
  */
 
 var yeoman = require('yeoman-generator'),
@@ -26,8 +26,8 @@ Generator.prototype.createCollection = function() {
 
   this.appname = currentApp.name();
 
-  var destination = path.join('django', this.appname, 'static', this.appname, 'collections', this.name + '.js');
-  var source = path.join('django', 'static', 'collection.js');
+  var destination = path.join('django', this.appname, 'static', this.appname, this.name + '.js');
+  var source = path.join('django', 'static', 'class.js');
 
   this.template(source, destination);
 };
