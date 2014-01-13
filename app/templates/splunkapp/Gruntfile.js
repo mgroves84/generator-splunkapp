@@ -15,8 +15,8 @@ module.exports = function(grunt) {
   var splunkConfig = configuration.get();
   if (!splunkConfig) {
     grunt.fail.fatal(
-      'Could not load configuration for current Splunk instance. Use `splunk-cli configure`.' +
-      'If `splunk-cli` is not available install it with `npm install splunk-cli`.');
+      'Could not load configuration for current Splunk instance. Use `splunkdev configure`.' +
+      'If `splunkdev` is not available install it with `npm install -g splunkdev`.');
   }
 
   // Set splunk application
