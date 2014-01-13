@@ -8,7 +8,7 @@
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-splunk": "git+ssh://git@github.com:splunk/grunt-splunk.git",
-    "generator-splunkapp": "git+ssh://git@github.com:splunk/generator-splunkapp.git"
+    "grunt-splunk": "https://github.com/outcoldman/grunt-splunk/archive/public-dependencies.tar.gz",
+    "generator-splunkapp": "https://github.com/outcoldman/generator-splunkapp/archive/public-dependencies.tar.gz"
   }
 }

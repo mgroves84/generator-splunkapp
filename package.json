@@ -23,7 +23,7 @@
   "dependencies": {
     "yeoman-generator": "~0.13.4",
     "underscore": "~1.5.2",
-    "grunt-splunk": "git+ssh://git@github.com:splunk/grunt-splunk.git"
+    "grunt-splunk": "https://github.com/outcoldman/grunt-splunk/archive/public-dependencies.tar.gz"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
